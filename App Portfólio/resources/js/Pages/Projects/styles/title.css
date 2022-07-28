@@ -1,0 +1,11 @@
+.title-area .title-page{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: conic-gradient(from 143.96deg at 50% 50%, rgba(226, 44, 44, 0.1) 0deg, #E22C2C 112.5deg, rgba(238, 99, 99, 0.974105) 240deg, rgba(226, 44, 44, 0.1) 360deg);
+    height:50vh;
+}
+.title-area .title-page h2{
+    font-size:3.75rem;
+    font-weight: 700;
+}

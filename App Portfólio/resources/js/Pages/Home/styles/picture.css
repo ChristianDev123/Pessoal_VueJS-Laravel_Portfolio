@@ -1,0 +1,22 @@
+.picture{
+    display:flex;
+}
+
+.dev-image{
+    width:70%;
+    padding:2px;
+    border-bottom:1px solid black;
+}
+
+#line{
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+    margin-left:20%;
+    transform:rotate(30deg) translateY(7%);
+}
+
+.btn-area{
+    display:flex;
+    justify-content: space-around;
+    width:50%;
+}

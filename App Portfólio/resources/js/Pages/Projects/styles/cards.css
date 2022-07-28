@@ -1,0 +1,6 @@
+.cards-area{
+    margin-top:4.3rem;
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    grid-row-gap: 4.3rem;
+}
