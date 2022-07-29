@@ -9,7 +9,7 @@
 export default {
     name:'CardStudy',
     props:{
-        url:String,
+        dataUrl:String,
         image:Object,
         name:String
     },

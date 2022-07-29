@@ -11,3 +11,8 @@
     --main-color-red:#E22C2C;
     --second-color-red:#A62C2C;
 }
+
+a, a:hover, a:focus{
+    text-decoration: none;
+    color:inherit;
+}

@@ -13,8 +13,19 @@
             </div>
         </section>
         <section class="cards-area">
-            <div v-for="technologie, index in filterData" :key="index">
-                <CardStudy :name="technologie.nameProject" :image="technologie.image"/>
+            <div v-if="btnDefault === 'study'">
+                <CardStudy
+                    v-for="technologie, index in studyProjects" 
+                    :key="index"
+                    :name="technologie.nameProject"
+                    :image="technologie.image"/>
+            </div>
+             <div v-if="btnDefault === 'ready'">
+                <CardReady
+                    v-for="technologie, index in readyProjects" 
+                    :key="index"
+                    :name="technologie.nameProject"
+                    :image="technologie.image"/>
             </div>
         </section>
     </main>
@@ -27,7 +38,8 @@
 <script>
 import Navbar from '../../components/Navbar';
 import SelectionBtn from './components/selectionbtn';
-import CardStudy from './components/languagecards'
+import CardStudy from './components/studycard';
+import CardReady from './components/readycard';
 export default {
     data(){
         const app = this;
@@ -36,13 +48,15 @@ export default {
                 {label:'Repositórios de Estudos', active:true, method:app.setStudy},
                 {label:'Projetos prontos', active:false, method:app.setReadyProjets}
             ],
-            filterData:[],
+            studyProjects:[],
+            readyProjects:[],
             btnDefault:'study'
     }},
     components:{
         Navbar,
         SelectionBtn,
-        CardStudy
+        CardStudy,
+        CardReady
     },
     methods:{
         setStudy(){
@@ -63,15 +77,19 @@ export default {
             this.btns = arr;
             this.btnDefault = 'ready';
         },
-        filterList(valueType){
-            this.filterData = this.$props.data.map((tech)=>{
-                if(tech.type == valueType) return tech;
+        filterList(){
+            const arrStudy = [];
+            const arrReady = [];
+            this.$props.data.map((tech)=>{
+                if(tech.type == 'ready') arrReady.push(tech);
+                else arrStudy.push(tech);
             });
+            this.studyProjects = arrStudy;
+            this.readyProjects = arrReady;
         },
     },
-    mounted(){
-        this.filterList(this.btnDefault);
-        console.log(this.filterData)
+    created(){
+        this.filterList();
     },
     props:{
         data:Array
