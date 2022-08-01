@@ -1,6 +1,6 @@
 <template>
     <header>
-        <section>
+        <section class="nv">
             <div v-for="button,index in buttons" :key="index">
                 <Link :href="button.link">
                     <Home v-if="button.title == 'Home'" :active="button.activate"/>
@@ -17,30 +17,7 @@
 
 <style scoped>
     
-    section{
-        display:flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap:1.2rem;
-    }
-
-    section div a {
-        color:inherit;
-        text-decoration: none;
-    }
-
-    section div p{
-        text-align:center;
-    }
-
-    section div img{
-        height:60px;
-        width:60px;
-    }
-
-    p.active, img.active {
-        color:var(--main-color-red);
-    }
+   @import './styles/navbar.css';
 
 </style>
 

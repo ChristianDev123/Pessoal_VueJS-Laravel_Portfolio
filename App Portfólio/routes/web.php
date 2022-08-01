@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 use App\Http\Controllers\ProjectController;
+use Illuminate\Auth\Access\Response;
 use Illuminate\Http\Request;
 
 /*
@@ -34,6 +35,11 @@ Route::get('/about-me',function(){
 
 Route::get('/curriculum',function(){
     return Inertia::render("Curriculum");
+});
+
+Route::get('/download-curriculum',function(){
+    $headers =['Content-Type: application/pdf'];
+    return response()->download(public_path('files/CHRISTIAN LIMA SANTANA.pdf'),'Christian-Santana-CV.pdf',$headers);
 });
 
 Route::post('/addimage',[ImageController::class,'create']);

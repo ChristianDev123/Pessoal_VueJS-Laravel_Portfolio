@@ -6,6 +6,12 @@
     height:50vh;
 }
 .title-area .title-page h2{
-    font-size:3.75rem;
+    font-size:1.6rem;
     font-weight: 700;
+}
+
+@media screen and (min-width:768px) {
+    .title-area .title-page h2{
+        font-size:2.5rem;
+    }
 }

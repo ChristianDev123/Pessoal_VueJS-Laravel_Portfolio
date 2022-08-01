@@ -38,7 +38,6 @@ class ProjectController extends Controller
             array_push($returnArr, [
                 "nameProject" => $nameProject,
                 "type" => $type,
-                "arrName" => $arrName,
                 "namesTechnologies" => $namesTechnologies,
                 "description" => $description,
                 "createDate" => $createDate,
@@ -54,7 +53,7 @@ class ProjectController extends Controller
         if($arrTechnologies != null){
             foreach($arrTechnologies as $technologie){
                 $imageTechnologie = $image::where([["nameTechnologie",$technologie]])->get()->first();
-                return $imageTechnologie != null ? $imageTechnologie : $image::findOrFail(4);
+                return $imageTechnologie != null ? $imageTechnologie : $image::findOrFail(22);
             }
         }
     }

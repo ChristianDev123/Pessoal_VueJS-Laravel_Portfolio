@@ -15,7 +15,7 @@
                     </h2>
                     <p>
                         Trabalho com desenvolvimento web front-end e <br/> 
-                        back-end. As principais ferramentas que utilizo é <br/>
+                        back-end. As principais ferramentas que utilizo são <br/>
                         React.JS, Vue.JS, Node.JS e Laravel 8.
                     </p>
                 </div>
@@ -35,17 +35,7 @@
 <style scoped>
     @import './styles/picture.css';
     @import './styles/apresentation.css';
-
-    #welcome-area{
-        width:100%;
-        display:flex;
-        justify-content: space-around;
-    }
-
-    .btn-area{
-        margin:10%;
-    }
-
+    @import './styles/welcome.css';
 </style>
 
 <script>

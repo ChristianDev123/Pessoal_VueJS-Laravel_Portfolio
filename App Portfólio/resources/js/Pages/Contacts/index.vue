@@ -8,22 +8,10 @@
                 <a :href="'https://' + contact.content"
                     target="_blank"
                     v-if="contact.link">
-                    <div class='contact-method'>
-                        <div class="image-wrapper">
-                            <img :src="contact.icon" :alt="contact.midia">
-                        </div>
-                        <div class='content'>
-                            <p>{{contact.content}}</p>
-                        </div>
-                    </div>
+                    <ContactMethod :Contact="contact"/>
                 </a>
-                <div class='contact-method' v-else>
-                    <div class='image-wrapper'>
-                        <img :src="contact.icon" :alt="contact.midia">
-                    </div>
-                    <div class='content'>
-                        <p>{{contact.content}}</p>
-                    </div>
+                <div v-else>
+                    <ContactMethod :Contact="contact"/>
                 </div>
             </div>
         </section>
@@ -31,28 +19,7 @@
 </template>
 
 <style scoped>
-    .contacts{
-        display:grid;
-        grid-template-columns: repeat(2,50%);
-        grid-row-gap: 50%;
-        padding:4.3rem;
-    }
-
-    .contacts .contact .contact-method{
-        display:flex;
-        align-items:center;
-
-    }
-
-    .contacts .contact .contact-method .content{
-        padding: 0 1.5rem;
-    }
-
-    .contacts .contact .contact-method .content p{
-        font-size:1.5rem;
-        color:#000;
-    }
-
+    @import './styles/contacts.css';
 </style>
 
 <script>
@@ -60,7 +27,8 @@ import GithubIcon from './assets/github.svg';
 import GmailIcon from './assets/gmail.svg';
 import LinkedInIcon from './assets/linkedin.svg';
 import PhoneIcon from './assets/phone.svg';
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar';
+import ContactMethod from './components/contact-method/index';
 export default {
     data:()=>({
         contacts:[
@@ -71,7 +39,8 @@ export default {
         ]
     }),
     components:{
-        Navbar
+        Navbar,
+        ContactMethod
     }
 }
 </script>

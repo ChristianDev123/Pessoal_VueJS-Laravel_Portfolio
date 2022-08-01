@@ -1,0 +1,99 @@
+.modal-background{
+    width:100%;
+    height:100%;
+    top:0;
+    position:fixed;
+    background:rgba(0,0,0,0.5);
+    overflow-y: scroll;
+}
+
+.modal-background .modal-screen{
+    background:white;
+    margin:5rem auto;
+    width: 80%;
+    border-radius: .7rem;
+    z-index:2;
+}
+
+.modal-screen .content{
+    width:100%;
+    height:100%;
+    padding:0.9rem;
+}
+
+.content .image-area{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.content .image-area img{
+    width:15rem;
+    height:15rem;
+    margin:2rem;
+}
+
+.content .data-area div{
+    width:100%;
+    padding:.5rem 0;
+}
+
+.content .data-area div h2{
+    text-align:center;
+    font-size:.8rem;
+    font-weight:700;
+}
+
+.content .data-area div h3{
+    font-size:.8rem;
+    font-weight:700;
+}
+
+.content .data-area div p{
+    width:100%;
+    font-size: .8rem;
+    font-weight:400;
+}
+
+.content .data-area .name-project{
+    margin-bottom:1rem;
+}
+.content .data-area .create-date{
+    text-align: right;
+}
+
+
+@media screen and (min-width:412px){
+    .content .data-area div h2,
+    .content .data-area div h3,
+    .content .data-area div p{
+        font-size:.9rem;
+    }
+}
+
+@media screen and (min-width:540px){
+    .content .data-area div h2,
+    .content .data-area div h3,
+    .content .data-area div p{
+        font-size:1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal-background .modal-screen{
+        width:60%;
+    }
+    .content .data-area div h2,
+    .content .data-area div h3,
+    .content .data-area div p{
+        font-size:1.2rem;
+    }
+}
+
+@media screen and (min-width:912px){
+    .content .data-area div h2,
+    .content .data-area div h3,
+    .content .data-area div p{
+        font-size:1.5rem;
+    }
+} 

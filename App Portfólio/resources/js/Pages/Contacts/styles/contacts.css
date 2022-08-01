@@ -1,0 +1,11 @@
+.contacts{
+    display:grid;
+    grid-row-gap: 50%;
+    padding:4.3rem;
+}
+
+@media screen and (min-width:820px){
+    .contacts{
+        grid-template-columns: repeat(2,50%);
+    }
+}

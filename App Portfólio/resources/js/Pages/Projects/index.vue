@@ -18,16 +18,23 @@
                     v-for="technologie, index in studyProjects" 
                     :key="index"
                     :name="technologie.nameProject"
-                    :image="technologie.image"/>
+                    :image="technologie.image"
+                    @click="setModal(technologie)"
+                    />
             </div>
              <div v-if="btnDefault === 'ready'">
                 <CardReady
                     v-for="technologie, index in readyProjects" 
                     :key="index"
                     :name="technologie.nameProject"
-                    :image="technologie.image"/>
+                    :image="technologie.image"
+                    @click="setModal(technologie)"/>
             </div>
         </section>
+        <ModalProject 
+            :Enable="modalOpen"
+            :Data="modalData"
+            @setFalse="setModal"/>
     </main>
 </template>
 <style scoped>
@@ -40,6 +47,7 @@ import Navbar from '../../components/Navbar';
 import SelectionBtn from './components/selectionbtn';
 import CardStudy from './components/studycard';
 import CardReady from './components/readycard';
+import ModalProject from '../../components/ModalProject';
 export default {
     data(){
         const app = this;
@@ -50,13 +58,16 @@ export default {
             ],
             studyProjects:[],
             readyProjects:[],
-            btnDefault:'study'
+            btnDefault:'study',
+            modalOpen:false,
+            modalData:''
     }},
     components:{
         Navbar,
         SelectionBtn,
         CardStudy,
-        CardReady
+        CardReady,
+        ModalProject
     },
     methods:{
         setStudy(){
@@ -77,6 +88,13 @@ export default {
             this.btns = arr;
             this.btnDefault = 'ready';
         },
+        setModal(data){
+            if(data){
+                this.modalData = data;
+            }
+            this.modalOpen = !this.modalOpen;
+            document.getElementsByTagName('html')[0].style.overflowY = this.modalOpen?'hidden':'auto';  
+        },
         filterList(){
             const arrStudy = [];
             const arrReady = [];
@@ -90,6 +108,7 @@ export default {
     },
     created(){
         this.filterList();
+        this.modalData = this.studyProjects[0];
     },
     props:{
         data:Array

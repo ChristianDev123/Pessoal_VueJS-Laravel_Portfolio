@@ -1,20 +1,26 @@
 <template>
     <div class="cards">
-        <a :href="url">
-            <div class="image">
-                <img v-if="image.urlImage != undefined" :src="`http://localhost:8000${image.urlImage}`" :alt="name" class="technologie-image">
-            </div>
-            <div class="description">
-                <p>{{name}}</p>
-            </div>
-        </a>
+        <div class="image">
+            <img v-if="image.urlImage != undefined" :src="`http://localhost:8000${image.urlImage}`" :alt="name" class="technologie-image">
+        </div>
+        <div class="description">
+            <p>{{nameProject}}</p>
+        </div>
     </div>
 </template>
 <script>
 export default {
     name:'CardReady',
+    data:()=>({
+        nameProject:''
+    }),
+    created(){
+        let arrName = this.$props.name;
+        arrName = String(arrName).split('_');
+        arrName = arrName[arrName.length-1];
+        this.nameProject = arrName;
+    },
     props:{
-        dataUrl:String,
         image:Object,
         name:String
     },
@@ -22,13 +28,8 @@ export default {
 </script>
 <style scoped>
     .cards{
-        display:flex;
-        justify-content:center;
-    }
-
-    .cards a:first-of-type{
-        width:15.7rem;
-        height:18.1rem;
+        width:5rem;
+        height: 100%;
         margin:auto;
         border:1px solid rgba(0,0,0,0.3);
         border-radius:.7rem;
@@ -54,5 +55,51 @@ export default {
     .cards .description p{
         width:100%;
         text-align:center;
+        font-size: .6rem;
     }
+
+    @media screen and (min-width:412px){
+        .cards{
+            width:6rem;
+        }
+    }
+
+    @media screen and (min-width:540px){
+        .cards{
+            width:8rem;
+        }
+        .cards .description p{
+            font-size: .8rem;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .cards{
+            width:11rem;
+        }
+
+        .cards .description p{
+            font-size:1.2rem;
+        }
+    }
+
+    @media screen and (min-width:912px){
+        .cards{
+            width:12rem;
+        }
+        .cards .description p {
+            font-size:1.2rem;
+        }
+    }
+
+    @media screen and (min-width:1024px){
+        .cards{
+            width:14rem;
+        }
+        
+        .cards .description p {
+            font-size: 1.4rem;
+        }
+    }
+
 </style>

@@ -1,0 +1,37 @@
+.content-area{
+    display:flex;
+    justify-content: space-between;
+    margin:4.7rem;
+}
+
+.content-area .inlustration-image{
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-area .content-list{
+    width:100%;
+}
+
+.content-area .inlustration-image img{
+    width: 38rem;
+    height:20rem;
+    border-radius:.7rem;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+} 
+
+.content-area .content-list h2{
+    font-size: 1.55rem;
+    font-weight: 700;
+
+}
+
+.content-area .content-list ul{
+    list-style: none;
+    padding:0;
+}
+
+.content-area .content-list ul li{
+    margin:3.4rem 0
+}

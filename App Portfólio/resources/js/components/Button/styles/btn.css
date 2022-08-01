@@ -1,0 +1,45 @@
+.btn-wrapper input{
+    font-size:.9rem;
+    border-radius:5px;
+    font-weight:600;
+    text-align:center;
+    transition:.7s;
+    width:11rem;
+    height:4rem;
+}
+
+.btn-wrapper input:hover{
+    background:var(--second-color-red);
+    color:#fff;
+    border:none;
+}
+
+.btn-wrapper .empty-btn{
+    border:1px solid black;
+}
+
+.btn-wrapper .full-btn{
+    background:var(--main-color-red);
+    color:#fff;
+    border:none;
+}
+
+@media screen and (min-width:412px) {
+    .btn-wrapper input{
+        width:13rem;
+        height:4.5rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .btn-wrapper input{
+        width:15rem;
+        height:5rem;
+        font-size:1.2rem;
+    }
+}
+@media screen and (min-width:912px){
+    .btn-wrapper input{
+        font-size:1.3rem;
+    }
+}

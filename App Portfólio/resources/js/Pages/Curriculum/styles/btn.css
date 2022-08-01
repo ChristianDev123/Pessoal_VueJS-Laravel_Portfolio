@@ -1,0 +1,7 @@
+.btn-area{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    margin-right:4.7rem;
+    margin-bottom:1.5rem;
+}
