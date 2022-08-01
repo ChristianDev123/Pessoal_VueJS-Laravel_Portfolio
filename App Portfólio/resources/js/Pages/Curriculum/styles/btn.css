@@ -1,7 +1,13 @@
 .btn-area{
     display:flex;
     align-items:center;
-    justify-content: flex-end;
-    margin-right:4.7rem;
+    justify-content: center;
     margin-bottom:1.5rem;
+}
+
+@media screen and (min-width:768px){
+    .btn-area{
+        justify-content: flex-end;
+        margin-right:4.7rem;
+    }
 }

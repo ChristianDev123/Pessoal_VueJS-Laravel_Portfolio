@@ -21509,7 +21509,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    justify-content: space-between;\n    margin:4.7rem;\n}\n\n.content-area .inlustration-image{\n    width:100%;\n    display: flex;\n    align-items: center;\n}\n\n.content-area .content-list{\n    width:100%;\n}\n\n.content-area .inlustration-image img{\n    width: 38rem;\n    height:20rem;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.55rem;\n    font-weight: 700;\n\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:3.4rem 0\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n\n.content-area .inlustration-image{\n    width:95%;\n    height:80%;\n    margin:auto;\n}\n\n.content-area .content-list{\n    width:100%;\n    margin-top:1rem;\n}\n\n.content-area .inlustration-image img{\n    width: 100%;\n    height:90%;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.2rem;\n    font-weight: 700;\n    text-align:center;\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:1rem 0 1rem 1rem\n}\n\n@media screen and (min-width:768px){\n    .content-area{\n        flex-direction:row;\n        margin:2rem;\n    }\n\n    .content-area .inlustration-image{\n        width:100%;\n        padding:0 .5rem;\n    }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21533,7 +21533,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contact .contact-method{\n    display:flex;\n    flex-direction: column;\n    align-items:center;\n}\n\n.contact .contact-method .content{\n    padding: 0 1.5rem;\n}\n\n.contact .contact-method .content p{\n    font-size:1.5rem;\n    color:#000;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contact .contact-method{\n    display:flex;\n    flex-direction: column;\n}\n\n.contact .image-wrapper{\n    display:flex;\n    justify-content: center;\n}\n\n.contact .contact-method .content{\n    padding: 0 1.5rem;\n}\n\n.contact .contact-method .content p{\n    font-size:1.5rem;\n    color:#000;\n    text-align: center;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21557,7 +21557,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contacts{\n    display:grid;\n    grid-row-gap: 50%;\n    padding:4.3rem;\n}\n\n@media screen and (min-width:820px){\n    .contacts{\n        grid-template-columns: repeat(2,50%);\n    }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contacts{\n    display:flex;\n    flex-direction: column;;\n    align-items: center;\n    gap:10%;\n}\n\n@media screen and (min-width:768px){\n    .contacts{\n        width:80%;\n        display:grid;\n        grid-row-gap: 50%;\n        grid-template-columns: repeat(2,50%);\n    }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21581,7 +21581,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-area{\n    display:flex;\n    align-items:center;\n    justify-content: flex-end;\n    margin-right:4.7rem;\n    margin-bottom:1.5rem;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-area{\n    display:flex;\n    align-items:center;\n    justify-content: center;\n    margin-bottom:1.5rem;\n}\n\n@media screen and (min-width:768px){\n    .btn-area{\n        justify-content: flex-end;\n        margin-right:4.7rem;\n    }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21605,7 +21605,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    justify-content: space-between;\n    margin:4.7rem;\n}\n\n.content-area .inlustration-image{\n    width:100%;\n    display: flex;\n    align-items: center;\n}\n\n.content-area .content-list{\n    width:100%;\n}\n\n.content-area .inlustration-image img{\n    width: 38rem;\n    height:20rem;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.55rem;\n    font-weight: 700;\n\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:3.4rem 0\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    flex-direction: column;\n    justify-content: space-between;\n    margin:1rem 0;\n}\n\n.content-area .inlustration-image{\n    width:95%;\n    height:70%;\n    margin:auto;\n}\n\n.content-area .content-list{\n    width:100%;\n    margin-top:1rem;\n}\n\n.content-area .inlustration-image img{\n    width: 100%;\n    max-height:15rem;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.2rem;\n    font-weight: 700;\n    text-align:center;\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:1rem 0 1rem 1rem\n}\n\n@media screen and (min-width:768px){\n    .content-area{\n        flex-direction:row;\n        margin:2rem;\n    }\n\n    .content-area .inlustration-image{\n        width:100%;\n        padding:0 .5rem;\n    }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22103,7 +22103,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card-wrapper[data-v-80de07c4]{\n        display:flex;\n        align-items:center;\n        gap:0.5rem;\n}\n.icon-wrapper img[data-v-80de07c4]{\n        width:3.75rem;\n        height:3.75rem;\n        margin-right: 2.2rem;\n}\n.content-wrapper p[data-v-80de07c4]{\n        text-align: justify;\n        font-size: 1.5rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.card-wrapper[data-v-80de07c4]{\n        display:flex;\n        align-items:center;\n        gap:0.5rem;\n}\n.icon-wrapper img[data-v-80de07c4]{\n        width:3.5rem;\n        height:3.5rem;\n        margin-right: 2rem;\n}\n.content-wrapper p[data-v-80de07c4]{\n        text-align: justify;\n        font-size: .9rem;\n}\n@media screen and (min-width:412px) {\n.content-wrapper p[data-v-80de07c4]{\n            font-size:1rem;\n}\n}\n@media screen and (min-width:912px){\n.icon-wrapper img[data-v-80de07c4]{\n            width:3.75rem;\n            height:3.75rem;\n}\n.content-wrapper p[data-v-80de07c4]{\n            font-size:1.3rem;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22127,7 +22127,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    justify-content: space-between;\n    margin:4.7rem;\n}\n\n.content-area .inlustration-image{\n    width:100%;\n    display: flex;\n    align-items: center;\n}\n\n.content-area .content-list{\n    width:100%;\n}\n\n.content-area .inlustration-image img{\n    width: 38rem;\n    height:20rem;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.55rem;\n    font-weight: 700;\n\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:3.4rem 0\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n\n.content-area .inlustration-image{\n    width:95%;\n    height:80%;\n    margin:auto;\n}\n\n.content-area .content-list{\n    width:100%;\n    margin-top:1rem;\n}\n\n.content-area .inlustration-image img{\n    width: 100%;\n    height:90%;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.2rem;\n    font-weight: 700;\n    text-align:center;\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:1rem 0 1rem 1rem\n}\n\n@media screen and (min-width:768px){\n    .content-area{\n        flex-direction:row;\n        margin:2rem;\n    }\n\n    .content-area .inlustration-image{\n        width:100%;\n        padding:0 .5rem;\n    }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22151,7 +22151,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contact .contact-method{\n    display:flex;\n    flex-direction: column;\n    align-items:center;\n}\n\n.contact .contact-method .content{\n    padding: 0 1.5rem;\n}\n\n.contact .contact-method .content p{\n    font-size:1.5rem;\n    color:#000;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contact .contact-method{\n    display:flex;\n    flex-direction: column;\n}\n\n.contact .image-wrapper{\n    display:flex;\n    justify-content: center;\n}\n\n.contact .contact-method .content{\n    padding: 0 1.5rem;\n}\n\n.contact .contact-method .content p{\n    font-size:1.5rem;\n    color:#000;\n    text-align: center;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22175,7 +22175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contacts{\n    display:grid;\n    grid-row-gap: 50%;\n    padding:4.3rem;\n}\n\n@media screen and (min-width:820px){\n    .contacts{\n        grid-template-columns: repeat(2,50%);\n    }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contacts{\n    display:flex;\n    flex-direction: column;;\n    align-items: center;\n    gap:10%;\n}\n\n@media screen and (min-width:768px){\n    .contacts{\n        width:80%;\n        display:grid;\n        grid-row-gap: 50%;\n        grid-template-columns: repeat(2,50%);\n    }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22199,7 +22199,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".btn-area{\n    display:flex;\n    align-items:center;\n    justify-content: flex-end;\n    margin-right:4.7rem;\n    margin-bottom:1.5rem;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".btn-area{\n    display:flex;\n    align-items:center;\n    justify-content: center;\n    margin-bottom:1.5rem;\n}\n\n@media screen and (min-width:768px){\n    .btn-area{\n        justify-content: flex-end;\n        margin-right:4.7rem;\n    }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22223,7 +22223,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    justify-content: space-between;\n    margin:4.7rem;\n}\n\n.content-area .inlustration-image{\n    width:100%;\n    display: flex;\n    align-items: center;\n}\n\n.content-area .content-list{\n    width:100%;\n}\n\n.content-area .inlustration-image img{\n    width: 38rem;\n    height:20rem;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.55rem;\n    font-weight: 700;\n\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:3.4rem 0\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".content-area{\n    display:flex;\n    flex-direction: column;\n    justify-content: space-between;\n    margin:1rem 0;\n}\n\n.content-area .inlustration-image{\n    width:95%;\n    height:70%;\n    margin:auto;\n}\n\n.content-area .content-list{\n    width:100%;\n    margin-top:1rem;\n}\n\n.content-area .inlustration-image img{\n    width: 100%;\n    max-height:15rem;\n    border-radius:.7rem;\n    box-shadow: 0 0 4px rgba(0,0,0,0.5);\n} \n\n.content-area .content-list h2{\n    font-size: 1.2rem;\n    font-weight: 700;\n    text-align:center;\n}\n\n.content-area .content-list ul{\n    list-style: none;\n    padding:0;\n}\n\n.content-area .content-list ul li{\n    margin:1rem 0 1rem 1rem\n}\n\n@media screen and (min-width:768px){\n    .content-area{\n        flex-direction:row;\n        margin:2rem;\n    }\n\n    .content-area .inlustration-image{\n        width:100%;\n        padding:0 .5rem;\n    }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

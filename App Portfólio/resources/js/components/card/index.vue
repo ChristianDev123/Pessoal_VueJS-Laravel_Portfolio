@@ -24,13 +24,30 @@ export default {
     }
     
     .icon-wrapper img{
-        width:3.75rem;
-        height:3.75rem;
-        margin-right: 2.2rem;
+        width:3.5rem;
+        height:3.5rem;
+        margin-right: 2rem;
     }
     
     .content-wrapper p{
         text-align: justify;
-        font-size: 1.5rem;
+        font-size: .9rem;
+    }
+
+    @media screen and (min-width:412px) {
+        .content-wrapper p{
+            font-size:1rem;
+        }
+    }
+
+    @media screen and (min-width:912px){
+        .icon-wrapper img{
+            width:3.75rem;
+            height:3.75rem;    
+        }
+
+        .content-wrapper p{
+            font-size:1.3rem;
+        }
     }
 </style>
