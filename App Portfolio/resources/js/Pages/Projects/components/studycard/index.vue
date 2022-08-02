@@ -1,7 +1,7 @@
 <template>
     <div class="cards">
         <a :href="url">
-            <img v-if="image.urlImage != undefined" :src="`http://localhost:8000${image.urlImage}`" :alt="name" class="technologie-image">
+            <img v-if="image.urlImage != undefined" :src="`/${image.urlImage}`" :alt="name" class="technologie-image">
         </a>
     </div>
 </template>

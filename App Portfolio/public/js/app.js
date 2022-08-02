@@ -20640,7 +20640,7 @@ var _hoisted_4 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [$props.image.urlImage != undefined ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", {
     key: 0,
-    src: "http://localhost:8000".concat($props.image.urlImage),
+    src: "/".concat($props.image.urlImage),
     alt: $props.name,
     "class": "technologie-image"
   }, null, 8
@@ -20714,7 +20714,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     href: _ctx.url
   }, [$props.image.urlImage != undefined ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", {
     key: 0,
-    src: "http://localhost:8000".concat($props.image.urlImage),
+    src: "/".concat($props.image.urlImage),
     alt: $props.name,
     "class": "technologie-image"
   }, null, 8

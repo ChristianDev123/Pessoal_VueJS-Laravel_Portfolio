@@ -1,7 +1,7 @@
 <template>
     <div class="cards">
         <div class="image">
-            <img v-if="image.urlImage != undefined" :src="`http://localhost:8000${image.urlImage}`" :alt="name" class="technologie-image">
+            <img v-if="image.urlImage != undefined" :src="`/${image.urlImage}`" :alt="name" class="technologie-image">
         </div>
         <div class="description">
             <p>{{nameProject}}</p>
