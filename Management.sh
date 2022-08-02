@@ -1,7 +1,7 @@
 #!/bin/bash
 
 development(){
-    cd "App Portfólio"
+    cd "App Portfolio"
     sudo /opt/lampp/lampp start
     code .
     /usr/bin/mysql-workbench

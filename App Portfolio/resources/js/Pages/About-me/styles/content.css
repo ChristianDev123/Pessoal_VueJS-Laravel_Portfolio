@@ -45,6 +45,21 @@
 
     .content-area .inlustration-image{
         width:100%;
-        padding:0 .5rem;
+    }
+    
+    .content-area .inlustration-image:nth-of-type(2){
+        display:flex;
+        justify-content: flex-end;
+    }
+    
+    .content-area .inlustration-image img{
+        max-height:20rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .content-area .inlustration-image img{
+        width:80%;
     }
 }
