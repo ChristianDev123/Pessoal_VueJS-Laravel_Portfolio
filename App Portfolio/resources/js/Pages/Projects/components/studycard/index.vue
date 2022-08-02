@@ -1,7 +1,7 @@
 <template>
     <div class="cards">
         <a :href="url">
-            <img v-if="image.urlImage != undefined" :src="`https://portfolio-christian.herokuapp.com/${image.urlImage}`" :alt="name" class="technologie-image">
+            <img v-if="image.urlImage != undefined" :src="`https://portfolio-christian.herokuapp.com${image.urlImage}`" :alt="name" class="technologie-image">
         </a>
     </div>
 </template>
