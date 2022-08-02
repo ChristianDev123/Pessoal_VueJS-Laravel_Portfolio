@@ -53,7 +53,7 @@ class ProjectController extends Controller
         if($arrTechnologies != null){
             foreach($arrTechnologies as $technologie){
                 $imageTechnologie = $image::where([["nameTechnologie",$technologie]])->get()->first();
-                return $imageTechnologie != null ? $imageTechnologie : $image::findOrFail(22);
+                return $imageTechnologie != null ? $imageTechnologie : $image::findOrFail(1);
             }
         }
     }
